@@ -11,18 +11,20 @@
       <ion-card>
         <ion-item>
           <ion-label stacked>Buy</ion-label>
-          <ion-input type="number" placeholder="Price"></ion-input>
-          <ion-input type="number" placeholder="Amount"></ion-input>
+          <ion-input type="number" placeholder="Price" [(ngModel)]="buyPrice" ></ion-input>
+          <ion-input type="number" placeholder="Amount" [(ngModel)]="buyAmount" ></ion-input>
         </ion-item>
+        <button full round ion-button color="secondary" (tap)="buy()">Buy BTC</button>
       </ion-card>
     </div>
     <div class="col col-50">
       <ion-card>
         <ion-item>
           <ion-label stacked>Sell</ion-label>
-          <ion-input type="number" placeholder="Price"></ion-input>
-          <ion-input type="number" placeholder="Amount"></ion-input>
+          <ion-input type="number" placeholder="Price" [(ngModel)]="sellPrice" ></ion-input>
+          <ion-input type="number" placeholder="Amount" [(ngModel)]="sellAmount" ></ion-input>
         </ion-item>
+        <button full round ion-button color="danger" (tap)="sell()">Sell BTC</button>
       </ion-card>
     </div>
 

@@ -12,6 +12,10 @@ export class HomePage {
   totalAsks: any = [];
   asks: any = { price: [], qty: [] };
   labels: any = [];
+  buyPrice: Number;
+  buyAmount: Number;
+  askPrice: Number;
+  askAmount: Number;
   constructor(public navCtrl: NavController, public books: BooksProvider) {}
 
   public barChartOptions: any = {
@@ -94,5 +98,13 @@ export class HomePage {
         { data: this.totalAsks, label: "Asks" }
       ];
     });
+  }
+
+  buy(){
+
+  }
+
+  sell(){
+    
   }
 }
